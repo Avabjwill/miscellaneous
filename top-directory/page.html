@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>"
+    <title>website</title>
+</head>
+
+<body>
+    <header>
+        <div class="header">
+            <h1>Daily <span class="seo">Refresh</span></h1>
+            <div>
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="#motivation">Motivation</a>
+                        </li>
+                        <li>
+                            <a href="#calming-center">Calming Center</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+
+    <div class="content">
+        <div id="motivation " class="motivation">
+            <h2>Motivation</h2>
+            <img src="./assets/img/space-image.png" />
+
+        </div>
+        <div id="calming-center" class="calming-center">
+            <h2>Calming Center</h2>
+            <embed type="video/mp4" src="./assets/video/vid.mp4" width="750" height="750" controls></embed>
+        </div>
+    </div>
+    <div class="timer">Time: <span id="time">0</span></div>
+
+    <div class="wrapper">
+        <div id="start-screen" class="start">
+            <h1>Refresh Quiz Challenge</h1>
+            <p>
+                Try to Answer these Light-Hearted questions to
+                Refresh you in-between contacts. Let's keep our Cortisol levels low
+                and our Spirits up!
+            </p>
+            <button id="start">Start Quiz</button>
+        </div>
+
+        <div id="questions" class="hide">
+            <h2 id="question-title"></h2>
+            <div id="choices" class="choices"></div>
+        </div>
+
+        <div id="end-screen" class="hide">
+            <h2>All done!</h2>
+            <p>Your final score is <span id="final-score"></span>.</p>
+        </div>
+        
+        <footer>
+            <div class="footer">
+                <h2> Daily Refresh </h2>
+            </div>
+        </footer>
+        <script src="./assets/js/script.js"></script>
+</body>
+
+</html>
