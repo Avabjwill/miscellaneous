@@ -5,8 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>"
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <title>website</title>
 </head>
 
@@ -30,46 +31,59 @@
     </header>
 
 
-    <div class="content">
-        <div id="motivation " class="motivation">
-            <h2>Motivation</h2>
-            <img src="./assets/img/space-image.png" />
+    <container>
+        <div class="content">
+            <div id="motivation" class="motivation">
+                <h2>Motivation</h2>
+                <img src="./assets/img/space-image.png" />
 
-        </div>
-        <div id="calming-center" class="calming-center">
-            <h2>Calming Center</h2>
-            <embed type="video/mp4" src="./assets/video/vid.mp4" width="750" height="750" controls></embed>
-        </div>
-    </div>
-    <div class="timer">Time: <span id="time">0</span></div>
-
-    <div class="wrapper">
-        <div id="start-screen" class="start">
-            <h1>Refresh Quiz Challenge</h1>
-            <p>
-                Try to Answer these Light-Hearted questions to
-                Refresh you in-between contacts. Let's keep our Cortisol levels low
-                and our Spirits up!
-            </p>
-            <button id="start">Start Quiz</button>
-        </div>
-
-        <div id="questions" class="hide">
-            <h2 id="question-title"></h2>
-            <div id="choices" class="choices"></div>
-        </div>
-
-        <div id="end-screen" class="hide">
-            <h2>All done!</h2>
-            <p>Your final score is <span id="final-score"></span>.</p>
-        </div>
-        
-        <footer>
-            <div class="footer">
-                <h2> Daily Refresh </h2>
             </div>
-        </footer>
-        <script src="./assets/js/script.js"></script>
+            <div id="calming-center" class="calming-center">
+                <h2>Calming Center</h2>
+                <embed type="video/mp4" src="./assets/video/vid.mp4" width="750" height="750" controls></embed>
+            </div>
+        </div>
+    </container>
+    <main>
+        <div id="word-h2" class="word-h2">
+            <h2> Guess Game </h2>
+            <p>
+                Guess the Word from your choices below. Work fast you've got 10 seconds! 
+            </p>
+           <ul>
+               <li>CAR TABLE HOUSE DOOR FLOWER TREE BIRD </li>
+            </p>
+        </div>
+        <button class="start-button">Start</button>
+
+        <section>
+            <div class="card word-guess">
+                <div class="large-font word-blanks">A _ M _ _ O N</div>
+            </div>
+            <div class="card results">
+                <div class="win-loss-container">
+                    <div>
+                        <h2>Wins: <span class="win">0 </span> </h2>
+                        <h2>Losses: <span class="lose">0</span></h2>
+                    </div>
+                    <button class="reset-button">Reset Score</button>
+                </div>
+                <div class="card timer">
+                    <div class="timer-text">
+                        <div class="large-font timer-count">10</div>
+                        <h3>seconds remaining</h3>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer">
+            <h2> Daily Refresh </h2>
+        </div>
+    </footer>
+    <script src="./assets/js/script.js"></script>
 </body>
 
 </html>
